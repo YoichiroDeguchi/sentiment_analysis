@@ -14,7 +14,7 @@ fetch('https://api.chatwork.com/v2/rooms/156657493/messages?force=1', options)
         console.log(response[1].body);
 
         const messages = [];
-        response.forEach(message => { //メッセージを1つずつ取り出し配列にまとめる
+        response.forEach(message => {
             messages.push(message.body);
         });
         console.log(messages);
