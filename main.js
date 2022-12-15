@@ -2,11 +2,11 @@ const options = {
     method: 'GET',
     headers: {
         accept: 'application/json',
-        'x-chatworktoken': '6015f0e82771fb9cb4f1e9f5d6fd7913'
+
     }
 };
 
-fetch('https://api.chatwork.com/v2/rooms/156657493/messages?force=1', options)
+fetch('https://api.chatwork.com/v2/rooms//messages?force=1', options)
     .then(response => response.json())
 
     .then(function (response) {
